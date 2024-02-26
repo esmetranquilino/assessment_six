@@ -1,0 +1,25 @@
+Bug Report: 
+Issue 1: 
+
+Description - 
+Steps to Reproduct - 
+Expected Result
+Actual Result - 
+Environment Actions - 
+
+Test Case 1: Check Wins and Losses
+
+Description - Test to make sure score reflects correct wins and losses.
+Steps of the Test: 
+    1. Click the "Draw" button to pick 2 bots that will duel against computer.
+    2. After selecting bots, click the "Duel" button. 
+    3. If user wins, ensure that the win is recorded and added to the tally in the "Wins" section of the scoreboard. 
+    4. If user loses, ensure that the loss is recorded and added to the tally in the "Losses" section of the scoreboard.
+
+Post Conditions: 
+    1. If user wins, ensure that the win is recorded and added to the tally in the "Wins" section of the scoreboard. 
+    2. If user loses, ensure that the loss is recorded and added to the tally in the "Losses" section of the scoreboard.
+
+Test Case 2: 
+
+Description - Test to makes sure scoreboard can be reset. 
