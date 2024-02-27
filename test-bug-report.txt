@@ -1,12 +1,3 @@
-Bug Report: 
-Issue 1: 
-
-Description - 
-Steps to Reproduct - 
-Expected Result
-Actual Result - 
-Environment Actions - 
-
 Test Case 1: Check Wins and Losses
 
 Description - Test to make sure score reflects correct wins and losses.
@@ -22,4 +13,44 @@ Post Conditions:
 
 Test Case 2: 
 
-Description - Test to makes sure scoreboard can be reset. 
+Description - Test to make sure scoreboard can be reset. 
+Steps of the Test: 
+    1. To reset scoreboard, click the browser's refresh button.
+
+Post Conditions: 
+    1. After refreshing the page, the scoreboard should be reset and should display zero wins and zero losses. 
+
+Test Case 3: 
+
+Description - Test to ensure bots are removed when clicking "Remove from Duo"
+
+Steps to Test: 
+    1. Click the "Draw" button to display all available bots. 
+    2. Add your preferred bots to your duo by clicking the "Add to Duo" button.
+    3. If user wants to switch bots, head to the "Your Duo" section and click the "Remove from Duo" button. 
+
+Post Conditions: 
+    1. After clicking the "Remove from Duo" button, bot should be removed from the the "Your Duo" section.
+    2. User should be able to select a different bot and add it to "Your Duo".
+
+Bug Report: 
+
+Description : Scoreboard displays inaccurate results. Wins are not recorded, instead they are added to losses tally.
+
+Steps to Reproduce: 
+    1. Click the "Draw" button to display bot choices. 
+    2. Select your preferred bots to duo. Add them to "Your Duo" section by clicking "Add to Duo."
+    3. Once you have selected your bots, click the "Duel" button. 
+    4. The web page should display a "You won!" or "You lost" message, and the score above should be updated with the correct number of wins or losses. 
+    5. To find the bug, pay attention to the "You won" message and the scoreboard. Do not click the "Play again" button right away. You will see that the win is not recorded in the wins section, but instead it is recorded as a loss in the scoreboard.
+
+Expected Result:
+    We expect that when a user wins the duo, the win will be recorded on the scoreboard. It would look like this:
+        Wins: 1
+        Losses: X
+    
+Actual Result: 
+    When the user wins the duo, the win is added to the losses tally, rather than the wins tally on the scoreboard. 
+
+Environment Sections:
+    Using Chrome Browser version 121.0.6167.184 to run web page.
